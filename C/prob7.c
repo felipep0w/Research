@@ -3,9 +3,8 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
-    
-    int numbers[] = {5,3,4,2,7};
+int largest_element(int numbers[]) {
+
     int count = 0; 
     int c_number = 5;   
 
@@ -18,8 +17,14 @@ int main() {
           }
           count++; 
     }
+    return c_number;  
+}
 
-    printf("Greater: %d\n", c_number); 
+int main() {
+    
+    int numbers[] = {5,3,12,2,7};
+    int greater = largest_element(numbers); 
+    printf("Greater: %d\n", greater); 
 
     return 0; 
 }

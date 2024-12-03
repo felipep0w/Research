@@ -2,12 +2,11 @@
 
 #include <stdio.h>
 
-int main() {
+void check_element(int numbers[]) {
 
-    int numbers[] = {1,4,3,5,2}; 
     int element = 3; 
 
-    for(int count = 0; count < sizeof(numbers)/4; count++) {
+    for(int count = 0; count < 5; count++) {
            if(element != numbers[count]) {
                continue;
            }else{
@@ -15,6 +14,12 @@ int main() {
               break; 
            }
     }
+
+}
+int main() {
+
+    int numbers[] = {1,4,3,5,2}; 
+    check_element(numbers); 
 
 return 0; 
 }
